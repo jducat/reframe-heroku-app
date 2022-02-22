@@ -1,1 +1,0 @@
-web: npx shadow-cljs watch app
