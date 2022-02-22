@@ -239,3 +239,9 @@ Please be patient; it may take over 15 seconds to see any output, and over 30 se
 
 The `resources/public/js/compiled` directory is created, containing the compiled `app.js` and
 `manifest.edn` files.
+
+# Heroku
+
+Possible add: Procfile called:
+
+web: java $JVM_OPTS -cp target/reframe-heroku-app.jar clojure.main -m reframe-heroku-app.server
