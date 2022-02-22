@@ -1,7 +1,7 @@
 {
 	"name": "reframe-heroku-app",
 	"scripts": {
-		"start": "npx shadow-cljs watch app",
+		"start": "node resources/public/js/compiled/app.js",
 		"ancient": "clojure -Sdeps '{:deps {com.github.liquidz/antq {:mvn/version \"RELEASE\"}}}' -m antq.core",
 		"watch": "npx shadow-cljs watch app browser-test karma-test",
 		"release": "npx shadow-cljs release app",
